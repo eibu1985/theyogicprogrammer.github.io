@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <!-- Meta Tags-->
+    <!-- Setting the description of Website-->
+    <meta name="description" content="this is Danesh's Portfolio Website'" />
+    <!-- Keywords for Search Engine Optimization (SEO)-->
+    <meta name="keywords" content="HTML, portfolio, beginners " />
+    <!-- Setting author of Website-->
+    <meta name="author" content="Danesh" />
+
+    <!-- Set Scaling for Mobile (Future Use)-->
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+
+    <!-- Let Browser know what character encoding is used - UTF-8 -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <!-- Link to CSS StyleSheet located in style folder-->
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+          <div id="logo_text">
+              <!-- class="logo_colour", allows you to change the colour of the text -->
+              <!-- Title of Website-->
+              <h1><a href="index.html">YP's'<span class="logo_colour"> Portfolio Website</span></a></h1>
+              <h2>Thought. Effort. Manifest.</h2>
+          </div>
+      </div>
+      <div id="menubar">
+          <ul id="menu">
+              <!-- Links on Top of Page-->
+              <!-- use class="selected" in the li tag for the selected page - This highlights the page you're on' -->
+              <li><a href="index.html">Home</a></li>
+              <li class="selected"><a href="examples.html">HTML Basics</a></li>
+              <li><a href="page.html">Granny</a></li>
+              <li><a href="another_page.html">TBD</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+    <div id="site_content">
+        <div class="sidebar">
+            <!-- insert your sidebar items here -->
+            <!-- Sidebar Items -->
+            <!-- Latest News-->
+            <h3>Latest News</h3>
+            <h4>Working on MySQL DB</h4>
+            <h5>June 26th, 2022</h5>
+            <p>Attempt to connect Database to website<br /><a href="#">Read more</a></p>
+
+            <h4>New Website Launched</h4>
+            <h5>June 24th, 2022</h5>
+            <p>Example website for use in Digital Portfolio.<br /><a href="#">Read more</a></p>  <!-- Read more currently links to nothing-->
+            <!-- Example Links = Currently link to nothing-->
+            <h3>Example Links</h3>
+            <ul>
+                <li><a href="#">Dummy Link 1</a></li>
+                <li><a href="#">Dummy Link 2</a></li>
+                <li><a href="#">Dummy Link 3</a></li>
+                <li><a href="#">Dummy Link 4</a></li>
+            </ul>
+
+
+            <!-- Website Search= currently not active-->
+            <h3>Website Search</h3>
+            <form method="post" action="#" id="search_form">
+                <p>
+                    <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                    <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+                </p>
+            </form>
+        </div>
+        <div id="content">
+            <!-- Content - Below Menu Bar -->
+            <h1>HTML Elements & Controls</h1>
+            <p>This page contains all the elements and controls used throughout the website (Also an index to help more elements on Website)</p>
+            <h2>Headings</h2>
+            <p>Different heading formats:</p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <h2>Text</h2>
+            <p>Display how Text within '&lt;p&gt;&lt;/p&gt;' tags will appear:</p>
+            <p><strong>Example of bold text</strong></p>
+            <p><i>Example of italic text</i></p>
+            <p><a href="#">Example of an hyperlink</a></p>
+            <h2>Lists</h2>
+            <p>Example of an unordered list:</p>
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+            </ul>
+            <p>Example of an ordered list:</p>
+            <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+            </ol>
+            
+            
+            <h2>Images/Pictures</h2>
+            <p>Example of how images can be displayed either to the Left, Center, or to the Right</p>
+            
+            <span class="left"><img src="style/left.jpg" alt="A Good Ole Hawk" style="width:100px;height:100px;" /></span>
+            
+            <p></p>
+            
+            <span class="center"><img src="style/center.jpg" alt="The Booski" style="width:100px;height:100px;" /></span> 
+            
+            <span class="right"><img src="style/right.png" alt="Haha" style="width:100px;height:100px;" /></span>
+            <p>
+                Currently practicing wrappers to make text show around images effectively
+            </p>
+            <h2>Tables</h2>
+            <p>Tables- Useful for Displaying Data; Not as Useful for Website Design & Layout</p>
+            <table style="width:100%; border-spacing:0;">
+                <tr><th>Item</th><th>Description</th></tr>
+                <tr><td>Item 1</td><td>Description of Item 1</td></tr>
+                <tr><td>Item 2</td><td>Description of Item 2</td></tr>
+                <tr><td>Item 3</td><td>Description of Item 3</td></tr>
+                <tr><td>Item 4</td><td>Description of Item 4</td></tr>
+            </table>
+            <h2>Example Form Elements</h2>
+            <form action="#" method="post">
+                <div class="form_settings">
+                    <p><span>Example Form Field</span><input type="text" name="name" value="" /></p>
+                    <p><span>Example TextArea</span><textarea rows="8" cols="50" name="name"></textarea></p>
+                    <p><span>Example Checkbox</span><input class="checkbox" type="checkbox" name="name" value="" /></p>
+                    <p><span>Example Dropdown List</span><select id="id" name="name"><option value="1">Example 1</option><option value="2">Example 2</option></select></p>
+                    <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="name" value="button" /></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        Copyright &copy; The Yogic Programmer 2022
+    </div>
+  </div>
+</body>
+</html>

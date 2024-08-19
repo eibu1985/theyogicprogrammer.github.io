@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <!-- Meta Tags-->
+    <!-- Setting the description of Website-->
+    <meta name="description" content="this is Danesh's Portfolio Website'" />
+    <!-- Keywords for Search Engine Optimization (SEO)-->
+    <meta name="keywords" content="HTML, portfolio, beginners " />
+    <!-- Setting author of Website-->
+    <meta name="author" content="Danesh" />
+
+    <!-- Set Scaling for Mobile (Future Use)-->
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+
+    <!-- Let Browser know what character encoding is used - UTF-8 -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <!-- Link to CSS StyleSheet located in style folder-->
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+          <div id="logo_text">
+              <!-- class="logo_colour", allows you to change the colour of the text -->
+              <!-- Title of Website-->
+              <h1><a href="index.html">YP's'<span class="logo_colour"> Portfolio Website</span></a></h1>
+              <h2>Thought. Effort. Manifest.</h2>
+          </div>
+      </div>
+      <div id="menubar">
+          <ul id="menu">
+              <!-- Links on Top of Page-->
+              <!-- use class="selected" in the li tag for the selected page - This highlights the page you're on' -->
+              <li><a href="index.html">Home</a></li>
+              <li><a href="examples.html">HTML Basics</a></li>
+              <li class="selected"><a href="page.html">Granny</a></li>
+              <li><a href="another_page.html">TBD</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+    <div id="site_content">
+        <div class="sidebar">
+            <!-- insert your sidebar items here -->
+            <!-- Sidebar Items -->
+            <!-- Latest News-->
+            <h3>Latest News</h3>
+            <h4>Working on MySQL DB</h4>
+            <h5>June 26th, 2022</h5>
+            <p>Attempt to connect Database to website<br /><a href="#">Read more</a></p>
+
+            <h4>New Website Launched</h4>
+            <h5>June 24th, 2022</h5>
+            <p>Example website for use in Digital Portfolio.<br /><a href="#">Read more</a></p>  <!-- Read more currently links to nothing-->
+            <!-- Example Links = Currently link to nothing-->
+            <h3>Example Links</h3>
+            <ul>
+                <li><a href="#">Dummy Link 1</a></li>
+                <li><a href="#">Dummy Link 2</a></li>
+                <li><a href="#">Dummy Link 3</a></li>
+                <li><a href="#">Dummy Link 4</a></li>
+            </ul>
+            <!-- Website Search= currently not active-->
+            <h3>Website Search</h3>
+            <form method="post" action="#" id="search_form">
+                <p>
+                    <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                    <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+                </p>
+            </form>
+        </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Granny's Page'</h1>
+        <p>This Page is a Placeholder for example database storing images and descriptions of the late great Granny - Currently Work in Progress </p>
+        <p>
+            <h1>Example of Uploading/Inserting Images into Database using PHP MySql:</h1>
+        </p>
+        <p></p>
+        <p>
+            <form action="" method="POST" enctype="multipart/form-data">
+
+                <label>Select</label>
+
+
+            </form>
+        </p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <div id="footer">
+        Copyright &copy; The Yogic Programmer 2022
+    </div>
+  </div>
+</body>
+</html>
